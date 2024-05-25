@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    border-bottom: 2px solid #dadada;
+    overflow: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box;
+}
+
+.nav-part2 {
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+}
+
+.nav h2 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.nav h4 {
+    font-size: 1vw;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.nav i {
+    font-size: 1.2vw;
+    display: none;
+    font-weight: 800;
+}
+.content{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: bisque; */
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 55%;
+    /* background-color: red; */
+    padding: 5vw 5vw;
+    box-sizing: border-box;
+}
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4vw;
+}
+.left h1 span{
+    color: lightseagreen;
+}
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    margin-top: -1vw;
+    margin-bottom: 3vw;
+}
+button{
+    font-size: 1.5vw;
+    padding: 1.1vw 2.1vw;
+    background-color: lightseagreen;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: blue; */
+}
+
+
+
+@media (max-width: 600px) {
+    .nav {
+        background-color: lightseagreen;
+        color: #fff;
+        padding: 0 5vw;
+        justify-content: space-between;
+        height: 60px;
+    }
+    .nav h2 {
+        font-size: 6vw;
+    }
+    .nav h4 {
+        font-size: 4vw;
+        display: none;
+    }
+    .nav i {
+        display: block !important;
+        font-size: 6vw;
+    }
+}
